@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<!-- Poukładać przyciski -->
+<html>
+<head>
+	<title>Rpi Tank</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="tank.css" type="text/css">
+</head>
+<body>
+	<header>
+		<h1>Raspberry Pie <img src="rpi-logo.png" alt="Rpi logo"> Tank Project</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Controls</a>
+				<li><a href="#">Setting</a>
+				<li><a href="#">Saved items</a>
+				<li><a href="#">Hardware</a>
+				<li><a href="#">About</a>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="camera">
+			<img id="mjpeg_dest" alt="Camera" src="tank.jpg">
+			<button id="camera_stop"> Stop camera </button>
+			<button id="camera_nv"> Night vision </button>
+			<button id="save_img"> Save image </button>
+			<button id="save_video"> Save video </button>
+			<button id="object_recognition"> Object recognition </button>
+		</section>
+		<section id="controls">
+			<div id="speed">
+				<h2>Speed: <span id="speed_value">2137</span></h2>
+				<div class="slidecontainer">
+					<input type="range" min="1" max="100" value="50" id="myRange">
+				</div>
+			</div>
+			<div id="direction">
+				<h2>Direction</h2>
+				<table>
+				<tr>
+					<td></td><td><button id="forward">↑</button></td>
+				</tr>
+				<tr>
+					<td><button id="left">←</button></td>
+					<td><button id="stop">⊠</button></td>
+					<td><button id="right">→</button></td>
+				</tr>
+				<tr>
+					<td></td><td><button id="reverse">↓</button></td>
+				</tr>
+				</table>
+			</div>
+		</section>
+	</main>
+	<div style="clear:both"></div>
+	<footer>
+		<span class="info"> Camera </span>
+			<span class="setting"> OFF </span>
+		<span class="night_vision"> Night Vision </span>
+			<span class="setting"> OFF </span>
+	</footer>
+</body>
+</html>
